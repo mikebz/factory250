@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'', include('bacon.urls')),
     url(r'^bacon/', include('bacon.urls')),
     url(r'^admin/', admin.site.urls),
 ]
